@@ -1,0 +1,120 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.nav-bar{
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.navList a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0px 25px;
+}
+
+.logo-bar img{
+    height: 30px;
+    padding-left: 10px;
+}
+
+.logo-bar{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.container{
+    height: 60vh;
+    width: 60%;
+    background-color: black;
+    color: white;
+    margin: 20px 240px;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url(assests/Music.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.control-panel{
+    background-color: black;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#progressBar{
+    cursor: pointer;
+    width: 90%
+    
+}
+
+.icons{
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+
+    
+}
+
+.songList{
+    margin: 37px 0px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songItems{
+    background-color: antiquewhite;
+    height: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.songItems img{
+    height: 50px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.songListPlay{
+    margin: 0px 25px;
+}
+
+.songListPlay i {
+    cursor: pointer;
+}
+
+.songInfo img{
+    width: 50px;
+    margin-right: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.songInfo {
+    position: absolute;
+    bottom: 50px;
+    left: 250px;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    
+}

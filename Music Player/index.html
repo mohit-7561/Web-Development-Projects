@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+<head>
+
+    <title>Spotify Clone</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <div class="logo-bar"><img src="assests/logo.png" alt="logo">Player</div>
+            <div class="navList">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>My Playlist: Top 5 Songs</h1>
+        <div class="songList">
+        </div>
+
+        <div class="songPoster"></div>
+    </div>
+    
+    <div class="control-panel">
+        <input type="range" id="progressBar" min="0" value="0" max="100">
+        <input type="range" id="volumeControl" min="0" max="100" step="1">
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" id="backward"></i>
+            <i class="fas fa-3x fa-play-circle" id="play-button"></i>
+            <i class="fas fa-3x fa-step-forward" id="forward"></i>
+  
+        </div>
+
+        <div class="songInfo">
+            <img src="assests/playing.gif" id="gif"><span id="songName">AUR SIKHAYAT - Raffey - Usama - Ahad</span>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/fb45ad999a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
