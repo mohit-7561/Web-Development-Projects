@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(158, 191, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+span{
+    font-size: 100px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: rgb(4, 3, 114);
+    cursor: pointer;
+    display: inline-block;
+}
+
+span.active{
+    animation: animate 2s ease-in-out;
+}
+
+@keyframes animate {
+    0% { transform: translate(0, 0) rotate(180deg);}
+    
+    100% {transform: scale(1.5) translatey(-150px); }
+}

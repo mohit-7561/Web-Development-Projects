@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: antiquewhite;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.header{
+    background-color: cadetblue;
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#input-label{
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.output{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+#outputText{
+    font-size: 35px;
+    color: cadetblue;
+}
