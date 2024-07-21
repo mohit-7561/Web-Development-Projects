@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Background Color Change</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+
+      #btn {
+        background-color: antiquewhite;
+        border: none;
+        padding: 4px 10px;
+        border-radius: 5px;
+      }
+
+      #btn2 {
+        background-color: rgb(234, 248, 248);
+        border: none;
+        padding: 4px 10px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+      body {
+        width: 90%;
+        height: 90vh;
+        background-image: linear-gradient(
+          to right top,
+          #051937,
+          #004d7a,
+          #008793,
+          #00bf72,
+          #a8eb12
+        );
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button id="btn">#09hf76</button>
+      <button id="btn2">#jh90y6</button>
+
+      <div class="copyCode">
+        background-image: linear-gradient(to right, rgb(76, 174, 215), rgb(165,
+        87, 210))
+      </div>
+    </div>
+
+    <script>
+      let btnElement = document.querySelector("#btn");
+      let btnElement2 = document.querySelector("#btn2");
+      let copyElement = document.querySelector(".copyCode");
+      let rgb1 = "#ffff";
+      let rgb2 = "#000";
+
+      const hexValues = () => {
+        let defaultHexaValues = "0123456789abcdef";
+        let hex = "#";
+        for (let i = 0; i < 6; i++) {
+          hex = hex + defaultHexaValues[Math.floor(Math.random() * 16)];
+        }
+        return hex;
+      };
+      const handleBtn = () => {
+        rgb1 = hexValues();
+        document.body.style.backgroundImage = `linear-gradient(to right, ${rgb1}, ${rgb2})`;
+        copyElement.innerHTML = `background-image: linear-gradient(
+          to right top, ${rgb1}, ${rgb2})`;
+        btnElement.innerText = rgb1;
+      };
+      const handleBtn2 = () => {
+        rgb2 = hexValues();
+        document.body.style.backgroundImage = `linear-gradient(to right, ${rgb1}, ${rgb2})`;
+        copyElement.innerHTML = `background-image: linear-gradient(
+          to right top, ${rgb1}, ${rgb2})`;
+        btnElement2.innerText = rgb2;
+      };
+
+      btnElement.addEventListener("click", handleBtn);
+      btnElement2.addEventListener("click", handleBtn2);
+    </script>
+  </body>
+</html>
